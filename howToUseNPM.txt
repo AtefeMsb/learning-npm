@@ -1,0 +1,47 @@
+// to create package.json file in the project
+npm init 
+
+// to install package locally
+npm install package_name
+
+// to install package globally
+npm install package_name -globally
+
+// to save package being install in package.json file
+npm install package_name --save
+
+// to reinstall all the npm packages from package.json file
+npm install
+
+// to install package as developement dependency
+npm install package_name --save-dev
+
+// to reinstall all the npm packages from package.json file for PRODUCTION mode, not install developement dependency packages
+NODE_ENV=production npm install
+
+// semantic versioning
+(Major.Minor.Patch)
+3.0.3
+// ^ : means download the most recent version all the way the next Major (update all minor releases)
+// ~ : means download the most recent version all the way the next Minor (update all patch releases)
+// No ~ and No ^: download the specefic version
+
+// to know if the the package is out of date
+npm outdated
+
+// to up to date ALL packages
+nom update
+
+// to remove package from node_modules
+npm uninstall package_name
+
+//  to remove package from node_modules and package.json
+ npm uninstall package_name --save
+
+ //  to remove developement package from node_modules and package.json
+ npm uninstall package_name --save-dev
+
+ // to check diffrent install options
+ npm help install
+
+
